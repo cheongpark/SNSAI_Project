@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, minimum-scale=1">
+    <meta name="viewport" content="user-scalable=0;">
+    <title>SNSAI PROJECT</title>
+    <link rel="shortcut icon" type="image/x-icon" href="img/SNSAI_LOGO.png">
+    <link rel="stylesheet" href="styles/index-style.css">
+    <link rel="stylesheet" href="styles/slide.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+    <script type="module" src="scripts/model-viewer.js"></script>
+    <script src="scripts/common.js"></script>
+    <script src="scripts/slide.js"></script>
+    <script src="scripts/chatbot.js"></script>
+</head>
+<body>
+    <div class="ui">
+        <div class="loading">LOADING</div>
+        <div class="intro">SNSAI CHATBOT</div>
+    </div>
+
+    <header>
+        <a href="/index.html" class="logo"><img src="/img/LOGO.png" alt="Vehicle Chatbot LOGO"></a>
+        <ul class="nav">
+            <li><a href="/html/Vehicle_Chatbot.html">Vehicle Chatbot</a></li>
+            <li><a href="/html/behind.html">비하인드</a></li>
+            <li><a href="/html/ppt.html">PPT</a></li>
+        </ul>
+    </header>
+
+    <div class="slide">
+        <ul class="slideul">
+
+            <li class="slideli">
+                <model-viewer id="pad-demo" style="width: 500px; height: 300px; left: 0%; margin-right: 10px;" auto-rotate camera-controls reveal="interaction" oncontextmenu="return false;" src="/3D_Model/Mercedes E Taxi.glb" alt="Mercedes E Taxi">
+                    <div id="lazy-load-poster" slot="poster" style="background-image: url(/img/main/slide_3d_model/taxi-preview.jpg);"></div>
+                    <div id="button-load" slot="poster">3D Model 로드</div>
+                </model-viewer>
+                <div class="SM">
+                    <p class="SMT">Mercedes E Taxi</p>
+                    <p class="SMD">
+                        <br>
+                        연료 : 가솔린 <br>
+                        배기량 : 1991cc <br>
+                        연비등급 : 4등급 <br>
+                        최고속도 : - <br>
+                        정원 : 5명 <br>
+                        <a href="https://www.mercedes-benz.co.kr/passengercars/mercedes-benz-cars/models/e-class/saloon-w213-fl/explore.html" target="_blank" style="text-decoration: underline; color: palegreen;">관련 웹페이지</a>
+                        <a href="https://auto.daum.net/newcar/model/m34000bnppck" target="_blank" style="text-decoration: underline; color: palegreen;">더 많은 정보</a>
+                    </p>
+                </div>
+            </li>
+
+            <li class="slideli">
+                <model-viewer id="pad-demo" style="width: 500px; height: 300px; left: 0%; margin-right: 10px;" auto-rotate camera-controls reveal="interaction" oncontextmenu="return false;" src="/3D_Model/Mercedes S Class AMG.glb" alt="Mercedes S Class AMG">
+                    <div id="lazy-load-poster" slot="poster" style="background-image: url(/img/main/slide_3d_model/SClass-preview.jpg);"></div>
+                    <div id="button-load" slot="poster">3D Model 로드</div>
+                </model-viewer>
+                <div class="SM">
+                    <p class="SMT">Mercedes S Class AMG</p>
+                    <p class="SMD">
+                        <br>
+                        연료 : 가솔린 <br>
+                        배기량 : 3982cc <br>
+                        연비등급 : 5등급 <br>
+                        최고속도 : 300km/h <br>
+                        정원 : 5명 <br>
+                        <a href="https://www.mercedes-benz.co.kr/passengercars/mercedes-benz-cars/models/s-class/saloon-wv223/explore.html" target="_blank" style="text-decoration: underline; color: palegreen;">관련 웹페이지</a>
+                        <a href="https://auto.daum.net/newcar/model/mdj000chppub" target="_blank" style="text-decoration: underline; color: palegreen;">더 많은 정보</a>
+                    </p>
+                </div>
+            </li>
+
+            <li class="slideli">
+                <img src="/img/main/slide_img/메인페이지-1.png" alt="2021-12-22">
+            </li>
+            <li class="slideli">
+                <img src="/img/main/slide_img/메인페이지-2.png" alt="공개">
+            </li>
+
+        </ul>
+    </div>
+
+    <div class="maintitle">
+        자동차 정보 보기 <br>
+        웹페이지
+    </div>
+    
+</body>
+</html>

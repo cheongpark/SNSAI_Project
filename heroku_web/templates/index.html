@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Vehicle Finder</title>
+    <link rel="shortcut icon" type="image/x-icon" href="{{ url_for('static', filename = 'img/SNSAI_LOGO.png') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename = 'css/style.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename = 'css/RIXtext.css') }}">
+    <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <script src="https://cdn.bootcss.com/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdn.bootcss.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="{{ url_for('static', filename = 'js/chatbot.js') }}"></script>
+    <script src="{{ url_for('static', filename = 'js/main.js') }}"></script>
+</head>
+<body>
+    <div class="background">
+        <div class="title">A.I Watson Project</div>
+        <br>
+        <div class="container">
+            <div class="center">
+                <form id="upload-file" method="post" enctype="multipart/form-data">
+                    <label for="cameraUpload" class="upload" title="카메라를 키거나 파일 업로드 버튼">카메라</label>
+                    <input type="file" name="file" id="cameraUpload" capture="camera" accept="image/*">
+                </form>
+            
+                <div class="image-section" style="display: none;">
+                    <div class="pv">
+                        <div id="imagePreview"></div>
+                    </div>
+                </div>
+            
+                <div class="load" style="display: none;"></div>
+            
+                <h3 id="result">
+                    <span></span>
+                </h3>
+                
+            </div>
+        </div>
+        <button id="back">돌아가기</button>
+    </div>
+</body>
+</html>

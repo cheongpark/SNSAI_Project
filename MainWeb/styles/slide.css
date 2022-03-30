@@ -1,0 +1,46 @@
+model-viewer {
+    float: left;
+}
+
+.slide {
+    overflow: hidden;
+    position: absolute;
+    width: 1300px;
+    height: 300px;
+    left: 50%;
+    transform: translate(-50%, 30%);
+    background-color: black;
+    border-radius: 10px;
+    cursor: pointer;
+    border: 2px solid black;
+}
+
+.slideul {
+    position: relative;
+    display: flex;
+}
+
+.slideli {
+    width: 1300px;
+    height: 300px;
+    clear: both;
+}
+
+.SM {
+    width: 800px;
+    height: 300px;
+    margin-left: 510px;
+    padding-right: 10px;
+    word-break: break-all;
+    color: white;
+}
+
+.SMT {
+    text-align: center;
+    font-size: 50px;
+}
+
+.SMD {
+    text-align: center;
+    font-size: 20px;
+}
