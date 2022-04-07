@@ -66,128 +66,35 @@ header .nav li a:hover {
     border: 3px solid white;
 }
 
-.ui {
+.load {
     width: 100%;
     height: 100%;
     overflow: hidden;
-    position: absolute;
-    mix-blend-mode: normal;
-    z-index: 2;
-    animation: ui 4s 3s;
-}
-
-.loading {
     position: fixed;
-    text-align: center;
-    font-family: rixyeoljeongdoregular;
-    font-size: 100px;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background-color: black;
-    padding: 100%;
-    color: white;
+    z-index: 2;
+    pointer-events: none;
+    background-color: rgba(0, 0, 0, 1);
     opacity: 0;
-    animation: loading 3s;
-    mix-blend-mode: normal;
+    animation: intro 1s;
 }
 
-.intro {
-    position: absolute;
+#loading {
+    position: relative;
     top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    opacity: 0;
-    padding: 0%;
-    text-align: center;
-    font-family: rixyeoljeongdoregular;
-    animation: kerning 4s 3s;
+    transform: translateY(-50%);
 }
 
-@keyframes loading {
-    from {
-        color: white;
-        opacity: 1;
-    }
-
-    to {
-        color: black;
-        opacity: 1;
-    }
-}
-
-@keyframes ui {
+@keyframes intro {
     0% {
-        mix-blend-mode: normal;
-    }
-
-    80% {
-        mix-blend-mode: multiply;
-    }
-
-    100% {
-        mix-blend-mode: multiply;
-    }
-}
-
-@keyframes kerning {
-    0% {
-        letter-spacing: 0px;
-        -webkit-text-stroke: 4px red;
-        font-size: 100px;
-        color: black;
-        background-color: black;
         opacity: 1;
-        padding: 100%;
-    }
-
-    2% {
-        -webkit-text-stroke: 4px black;
-    }
-
-    4% {
-        -webkit-text-stroke: 4px blue
-    }
-
-    6% {
-        -webkit-text-stroke: 4px white;
-    }
-
-    10% {
-        -webkit-text-stroke: 4px black;
-    }
-
-    20% {
-        letter-spacing: 0px;
-        -webkit-text-stroke: 4px black;
     }
 
     50% {
-        -webkit-text-stroke: 4px black;
-        color: black;
-    }
-
-    80% {
-        font-size: 100px;
-        transform: translate(-50%, -50%);
-        letter-spacing: 30px;
-        color: white;
-    }
-
-    90% {
-        font-size: 6000px;
-        transform: translate(-50%, -57%);
         opacity: 1;
     }
 
     100% {
-        -webkit-text-stroke: 4px white;
-        font-size: 6000px;
-        transform: translate(-50%, -57%);
-        background-color: black;
-        color: white;
         opacity: 0;
-        padding: 100%;
     }
 }
 
@@ -265,11 +172,10 @@ header .nav li a:hover {
 
 .maintitle {
     position: absolute;
-    text-align: center;
     color: black;
-    font-size: 80px;
+    font-size: 100px;
     left: 50%;
-    transform: translate(-50%, 0);
-    margin-top: 400px;
-    z-index: -5;
+    top: 65%;
+    transform: translate(-50%, -50%);
+    font-family: rixyeoljeongdoregular;
 }

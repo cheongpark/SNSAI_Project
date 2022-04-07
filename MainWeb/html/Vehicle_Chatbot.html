@@ -8,11 +8,12 @@
     <link rel="shortcut icon" type="image/x-icon" href="img/SNSAI_LOGO.png">
     <link rel="stylesheet" href="../styles/index-style.css">
     <link rel="stylesheet" href="../styles/imgtext.css">
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="../scripts/common.js"></script>
-    <script src="../scripts/b-chatbot.js"></script>
 </head>
 <body>
+    <div class="load">
+        <div id="loading"></div>
+    </div>
+
     <header>
         <a href="../index.html" class="logo"><img src="../img/LOGO.png" alt="Vehicle Chatbot Logo"></a>
         <ul class="nav">
@@ -23,7 +24,7 @@
     </header>
 
     <div class="textdes">
-        <section id="scroll-section1">
+        <section>
             <h1>
                 <p>Vehicle ChatBot</p>
             </h1>
@@ -38,7 +39,7 @@
             </h5>
         </section>
 
-        <section id="scroll-section2">
+        <section>
             <h1>
                 <p>Keras</p>
             </h1>
@@ -50,7 +51,7 @@
             </h5>
         </section>
 
-        <section id="scroll-section3">
+        <section>
             <h1>
                 <p>Vehicle Finder</p>
             </h1>
@@ -68,7 +69,7 @@
             </h5>
         </section>
 
-        <section id="scroll-section4">
+        <section>
             <h1>
                 <p>YOLO V5</p>
             </h1>
@@ -87,7 +88,7 @@
             </h5>
         </section>
 
-        <section id="scroll-section5">
+        <section>
             <h1>
                 <p>스마트폰과 인터넷 익스플로러</p>
             </h1>
@@ -102,9 +103,9 @@
             </h5>
         </section>
 
-        <section id="scroll-section6">
+        <section>
             <h1>
-                <p>일부 제작 영상</p>
+                <p>제작 영상</p>
             </h1>
             <iframe width="560" height="315" src="https://www.youtube.com/embed/LYyW83myKU8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             <h5>
@@ -112,10 +113,17 @@
                     2021-12-22일 발표할 때 참고용으로 쓸 영상이다.
                 </p>
             </h5>
+
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/sqdDHZuXo0s" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <h5>
+                <p>
+                    2021-12-22일 발표 후 제작된 영상이다.
+                </p>
+            </h5>
             <!-- 2021/12/21 AM 1:35 -->
         </section>
 
-        <section id="scroll-section7">
+        <section>
             <h1>
                 <p>끝</p>
             </h1>
@@ -127,5 +135,11 @@
             <!-- 2021/12/21 AM 1:35 -->
         </section>
     </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="../scripts/common.js"></script>
+    <script src="../scripts/chatbot.js"></script>
+    <script src="../scripts/lottie.js"></script>
+    <script src="../scripts/script.js"></script>
 </body>
 </html>

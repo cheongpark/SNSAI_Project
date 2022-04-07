@@ -1,5 +1,5 @@
 # Web 
-[![HTML](https://img.shields.io/badge/WEB-E34F26?style=flat-square&logo=HTML5&logoColor=white)](https://snsai-cp.netlify.app) 웹에 뭔가 문제가 생겼는데 원래는 없었음 (나중에 수정)
+[![HTML](https://img.shields.io/badge/WEB-E34F26?style=flat-square&logo=HTML5&logoColor=white)](https://sns-ai.netlify.app/) 로딩에 오류가 있었는데 해결함
 
 ***
 # Video 

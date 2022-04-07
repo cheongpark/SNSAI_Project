@@ -9,8 +9,7 @@ $(document).ready(function() {
         window.alert("Internet Explorer는 지원하지 않습니다.\n다른 브라우저로 들어와주세요! ex) 크롬");
         window.close();
     }
-
-    removetagtime('.ui', 7000);
+    removetagtime('.load', 2000);
 });
 
 function removetag(tag) {
