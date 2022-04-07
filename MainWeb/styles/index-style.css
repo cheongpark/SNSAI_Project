@@ -102,6 +102,10 @@ header .nav li a:hover {
     .nav {
         visibility: hidden;
     }
+
+    .pptul {
+        opacity: 0;
+    }
 }
 
 /* 3D Model */
@@ -174,8 +178,9 @@ header .nav li a:hover {
     position: absolute;
     color: black;
     font-size: 100px;
+    bottom: 10%;
     left: 50%;
-    top: 65%;
     transform: translate(-50%, -50%);
     font-family: rixyeoljeongdoregular;
+    z-index: -1;
 }

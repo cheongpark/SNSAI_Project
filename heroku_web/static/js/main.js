@@ -41,9 +41,6 @@ $(document).ready(function() {
             async: true,
             success: function(data) {
                 $('.loader').hide();
-                $('#result').css('font-family', 'rixyeoljeongdoregular');
-                $('#result').css('font-size', '80px');
-                $('#result').css('color', 'white');
                 $('#result').fadeIn(100);
                 $('#result').text(data);
                 console.log('완료!');

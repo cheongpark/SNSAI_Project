@@ -14,7 +14,7 @@ html, body {
 }
 
 .pv {
-    width: 512px;
+    width: auto;
     height: 256px;
     position: relative;
     margin-top: 1em;
@@ -68,6 +68,12 @@ input[type = "file"] {
     text-align: center;
 }
 
+#result {
+    font-family: rixyeoljeongdoregular;
+    font-size: 80px;
+    color: white;
+}
+
 #back {
     left: 10px; bottom: 10px;
     position: absolute;
@@ -108,6 +114,26 @@ input[type = "file"] {
     }
 
     100% {
+        opacity: 0;
+    }
+}
+
+@media (max-width: 550px) {
+    .pv {
+        height: 128px;
+    }
+
+    .pv > div {
+        background-size: 256px;
+    }
+
+    #result {
+        font-size: 40px;
+    }
+}
+
+@media (max-width: 300px) {
+    .pv {
         opacity: 0;
     }
 }
